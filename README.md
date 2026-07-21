@@ -75,6 +75,39 @@ cd GitDeep
 # Install dependencies
 npm install
 
+<table>
+<tr>
+    <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
+        <a href=https://github.com/Yuvraj-Sarathe>
+            <img src=https://avatars.githubusercontent.com/u/216678101?v=4 width="100;"  alt=Yuvraj Sarathe/>
+            <br />
+            <sub style="font-size:14px"><b>Yuvraj Sarathe</b></sub>
+        </a>
+    </td>
+    <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
+        <a href=https://github.com/PrathamReddy888>
+            <img src=https://avatars.githubusercontent.com/u/219442049?v=4 width="100;"  alt=PrathamReddy888/>
+            <br />
+            <sub style="font-size:14px"><b>PrathamReddy888</b></sub>
+        </a>
+    </td>
+    <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
+        <a href=https://github.com/preranaanand07>
+            <img src=https://avatars.githubusercontent.com/u/241425799?v=4 width="100;"  alt=Prerana anand/>
+            <br />
+            <sub style="font-size:14px"><b>Prerana anand</b></sub>
+        </a>
+    </td>
+    <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
+        <a href=https://github.com/karrisanthoshigayatri>
+            <img src=https://avatars.githubusercontent.com/u/268634585?v=4 width="100;"  alt=karrisanthoshigayatri/>
+            <br />
+            <sub style="font-size:14px"><b>karrisanthoshigayatri</b></sub>
+        </a>
+    </td>
+</tr>
+</table>
+
 # Run development server
 npm run dev
 ```
