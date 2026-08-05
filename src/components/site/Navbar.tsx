@@ -215,6 +215,7 @@ export function Navbar() {
               <WifiOff className="h-3.5 w-3.5" />
               <span className="hidden sm:inline">Offline Mode</span>
             </div>
+          )}
 
             <ThemeToggle />
 
@@ -229,7 +230,6 @@ export function Navbar() {
                 <Bookmark size={16} />
               </button>
             )}
-            {user ? (
             {isInitializing ? (
               <ProfileHeaderSkeleton />
             ) : user ? (
@@ -298,7 +298,6 @@ export function Navbar() {
             {mobileMenuOpen ? <X size={18} /> : <Menu size={18} />}
           </button>
         </div>
-      </div>
 
       <BookmarksPanel open={bookmarksPanelOpen} onOpenChange={setBookmarksPanelOpen} user={user} />
 

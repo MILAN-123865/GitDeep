@@ -1117,8 +1117,6 @@ const [selectedClubId, setSelectedClubId] = useState("");
                     </AnimatedTooltip>
                   </div>
                 </div>
-              </div>
-            </div>
 
             <style>{`
               @keyframes slideDown {
@@ -1525,6 +1523,7 @@ const [selectedClubId, setSelectedClubId] = useState("");
                 You're all caught up! 🎉
               </div>
             )}
+          </div>
           </div>
         </section>
       </PullToRefresh>

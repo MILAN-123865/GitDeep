@@ -434,6 +434,7 @@ function SettingsPageContent({ user }: WithAuthProps) {
               </p>
             </div>
           </div>
+          <div className="md:col-span-3 space-y-8">
           {/* ------------------------------- */}
           <Panel title="Profile">
             <AvatarUpload name={currentFullName || "User"} avatarTheme={currentAvatarTheme} />
@@ -726,7 +727,7 @@ function SettingsPageContent({ user }: WithAuthProps) {
                   </FormControl>
                 </FormItem>
               )}
-            </FormField>
+            />
 
             <div className="flex items-center justify-between gap-4 border-t-2 border-black pt-4">
               <label
@@ -842,7 +843,7 @@ function SettingsPageContent({ user }: WithAuthProps) {
                   </FormControl>
                 </FormItem>
               )}
-            </FormField>
+            />
             <FormField
               control={form.control as any}
               name="digest"
@@ -862,7 +863,7 @@ function SettingsPageContent({ user }: WithAuthProps) {
                   </FormControl>
                 </FormItem>
               )}
-            </FormField>
+            />
             <FormField
               control={form.control as any}
               name="push_notifications"
@@ -882,7 +883,7 @@ function SettingsPageContent({ user }: WithAuthProps) {
                   </FormControl>
                 </FormItem>
               )}
-            </FormField>
+            />
           </Panel>
 
           <Panel title="Danger zone" tone="bg-red-50">
@@ -955,6 +956,7 @@ function SettingsPageContent({ user }: WithAuthProps) {
               </DialogContent>
             </Dialog>
           </Panel>
+        </div>
         </div>
       </section>
     </SiteShell>
@@ -1039,14 +1041,9 @@ function AvatarUpload({ name, avatarTheme }: { name: string; avatarTheme?: Avata
   const inputRef = useRef<HTMLInputElement>(null);
   const [uploading, setUploading] = useState(false);
   const [isDragging, setIsDragging] = useState(false);
-  const [uploadProgress, setUploadProgress] = useState(0);
+  const [uploadProgress, setUploadProgress] = useState<number | null>(null);
   const [selectedFile, setSelectedFile] = useState<File | null>(null);
 
-  const [uploading, setUploading] = useState(false);
-  const [isDragging, setIsDragging] = useState(false);
-  const [selectedFile, setSelectedFile] = useState<File | null>(null);
-  const [uploadProgress, setUploadProgress] = useState<number | null>(null);
-  const inputRef = useRef<HTMLInputElement>(null);
 
   const handleDragEnter = (e: React.DragEvent<HTMLDivElement>) => {
     e.preventDefault();
